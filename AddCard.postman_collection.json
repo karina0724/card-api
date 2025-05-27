@@ -1,0 +1,88 @@
+{
+  "info": {
+    "name": "AddCard",
+    "_postman_id": "b1b0eaa1-fb60-4e4b-b68f-7132a2e67d57",
+    "description": "Colección para probar la API de tarjetas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/cards",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["cards"]
+        }
+      }
+    },
+    {
+      "name": "Crear tarjeta",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"number\": \"1234567890123456\",\n  \"holder\": \"Juan Pérez\",\n  \"expiry\": \"12/26\",\n  \"cvv\": \"123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/cards",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["cards"]
+        }
+      }
+    },
+    {
+      "name": "Obtener por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/cards/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["cards", "{{id}}"]
+        }
+      }
+    },
+    {
+      "name": "Actualizar tarjeta",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"holder\": \"Pedro Ramírez\",\n  \"cvv\": \"456\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/cards/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["cards", "{{id}}"]
+        }
+      }
+    },
+    {
+      "name": "Eliminar tarjeta",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/cards/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["cards", "{{id}}"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "282bc328-2b51-4fef-b692-ceb81636b28f",
+    "number": "1234567890123459",
+    "expiry": "02/25",
+    "holder": "Luis Soto",
+    "cvv": "665"
+  },
+  {
+    "id": "67cf907d-41e9-4a6f-abba-b764237e21b0",
+    "number": "8979846464658998",
+    "holder": "Helen Montas",
+    "expiry": "02/03",
+    "cvv": "222"
+  },
+  {
+    "id": "c2f3de7d-2eb8-4ebb-a5ca-2bc9a03c7c01",
+    "number": "8988888998498440",
+    "holder": "Carlos Rodriguez",
+    "expiry": "02/27",
+    "cvv": "999"
+  }
+]
